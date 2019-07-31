@@ -23,9 +23,6 @@ $(call inherit-product, device/oneplus/oneplus3/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# Vendor security patch level
-VENDOR_SECURITY_PATCH := 2019-04-01
-
 PRODUCT_NAME := lineage_oneplus3
 PRODUCT_DEVICE := oneplus3
 PRODUCT_MANUFACTURER := OnePlus
@@ -33,6 +30,11 @@ PRODUCT_BRAND := OnePlus
 
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
-BUILD_FINGERPRINT := "OnePlus/OnePlus3/OnePlus3:9/PKQ1.181203.001/1905251415:user/release-keys"
-
 TARGET_VENDOR := oneplus
+
+# Build fingerprint
+PRODUCT_BUILD_PROP_OVERRIDES += \
+PRIVATE_BUILD_DESC="OnePlus3-user 9 PKQ1.181203.001 1905250152 release-keys"
+
+BUILD_FINGERPRINT := "OnePlus/OnePlus3/OnePlus3T:9/PKQ1.181203.001/1905250152:user/release-keys"
+
