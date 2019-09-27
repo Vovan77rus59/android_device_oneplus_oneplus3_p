@@ -30,7 +30,10 @@ $(call inherit-product, vendor/oneplus/oneplus3/oneplus3-vendor.mk)
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
     $(LOCAL_PATH)/overlay-lineage
-
+    
+PRODUCT_ENFORCE_RRO_TARGETS := \
+    framework-res
+    
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.audio.low_latency.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.low_latency.xml \
