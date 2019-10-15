@@ -34,7 +34,7 @@ TARGET_VENDOR := oneplus
 
 # Build fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
-PRIVATE_BUILD_DESC="OnePlus3-user 9 PKQ1.181203.001 1905250152 release-keys"
+PRIVATE_BUILD_DESC="OnePlus3-user 9 PKQ1.181203.001 1907311932 release-keys"
 
-BUILD_FINGERPRINT := "OnePlus/OnePlus3/OnePlus3T:9/PKQ1.181203.001/1905250152:user/release-keys"
+BUILD_FINGERPRINT := "OnePlus/OnePlus3/OnePlus3T:9/PKQ1.181203.001/1907311932:user/release-keys"
 
